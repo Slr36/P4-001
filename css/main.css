@@ -7,5 +7,218 @@
     color: white;
     text-align: center;
     padding: 10px;
-    font-size: 0.5rem;
+    font-size: 0.75rem;
+}
+/*DEVELOPER: Sean Romero, IS117-001, Fall 2025 */
+
+
+.cards {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: lightblue;
+}
+.card {
+    background-color: transparent;
+    float: left;
+    width: 200px;
+    border: 2px solid blue;
+    margin: 0 20px 20px 0;
+    padding: 10px;
+    text-align: center;
+}
+.cards::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.card img {
+    width: 100%;
+    height: 150px;
+    border: 1px solid black;
+    object-fit: cover;
+}
+.me_pic img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid blue;
+    display: block;
+}
+.side_layout img:not(.me_pic-images) {
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+    border: 2px solid blue;
+}
+.me_pic {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+.textAB {
+    max-width: 600px;
+    text-align: left;
+    overflow: hidden;
+}
+.side_layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.collum_set {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+.survival_cards {
+    border: 2px solid blue;
+    padding: 10px;
+    text-align: center;
+    max-width: 300px;
+}
+.survival_cards img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid blue;
+}
+.survival_cards h3 {
+    margin-top: 10px;
+    font-size: .75em;
+}
+.survival_cards p {
+    font-size: .75em;
+    margin-top: 5px;
+}
+.home {
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.home h2,
+.home h3 {
+    color: #6610f2;
+    font-weight: bold;
+}
+.home p {
+    color: mediumslateblue;
+    font-style: italic;
+    margin: 10px;
+    padding: 10px;
+}
+.about {
+    background-color: lightblue;
+}
+.about h3 {
+    color: mediumslateblue;
+}
+.about p {
+    color: mediumslateblue;
+    font-size: 1em;
+}
+.about h2 {
+    color: mediumslateblue;
+}
+.contact {
+    background-color: lightblue;
+}
+.form-group {
+    color: mediumslateblue;
+}
+.survive-page {
+    background-color: lightblue;
+}
+.survive-page h3 {
+    color: mediumslateblue;
+}
+.survive-page p {
+    color: mediumslateblue;
+    font-size: 1em;
+}
+.survive-page h2 {
+    color: mediumslateblue;
+}
+.action-p {
+    background-color: lightblue;
+}
+.action-p h3 {
+    color: mediumslateblue;
+}
+.action-p p {
+    color: mediumslateblue;
+    font-size: 1em;
+}
+.action-p h2 {
+    color: mediumslateblue;
+}
+.footer {
+    background-color: transparent;
+    font-style: italic;
+    font-weight: bold;
+    font-size: medium;
+    position: fixed;
+}
+
+
+@media (max-width: 600px) {
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+        background-color: lightblue;
+    }
+    .card {
+        float: none;
+        margin: 10px auto;
+        width: 85%;
+        max-width: 300px;
+        background-color: lightblue;
+    }
+    .side_layout {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+    }
+    .side_layout img:not(.me_pic-images) {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+        border: 2px solid blue;
+    }
+    .collum_set {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        margin: 10px;
+    }
+    .me_pic {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 150px;
+        display: block;
+        margin-left: auto;
+    }
+    .me_pic img {
+        width: 150px;
+        height: auto;
+    }
+    .survival_cards img {
+        width: 80px;
+        height: 100px;
+    }
+    .footer {
+        font-size: .75em;
+        position: fixed;
+    }
 }

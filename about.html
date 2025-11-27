@@ -1,10 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Bootstrap Page</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+
 </head>
-<body>
-$END$
+<body class="about">
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
+            <!-- DEVELOPER: Sean Romero, IS117-001, Fall 2025 ->
+
+
+                        <!-- Brand -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/LogoPic.png" alt="Logo" style="width:80px">
+            </a>
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <!-- Links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                           data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Games
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="survivalPage.html">Survival</a>
+                            <a class="dropdown-item" href="actionPage.html">Action</a>
+                            <a class="dropdown-item" href="#">Link 3</a> <!-- update page if more game types needed -->
+                            <a class="dropdown-item" href="#">Link 4</a> <!-- update page if more game types needed -->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--    <div class="row">
+               <p class="col-1">Col 1</p>
+               <p class="col-1">Col 2</p>
+               <p class="col-1">Col 3</p>
+               <p class="col-1">Col 4</p>
+               <p class="col-1">Col 5</p>
+               <p class="col-1">Col 6</p>
+               <p class="col-1">Col 7</p>
+               <p class="col-1">Col 8</p>
+               <p class="col-1">Col 9</p>
+               <p class="col-1">Col 10</p>
+               <p class="col-1">Col 11</p>
+               <p class="col-1">Col 12</p>
+           </div> -->
+           <div class="col-sm-12  text-center">
+               <div class="side_layout">
+               <div class="me_pic">
+                   <img src="images/Sean.jpeg" alt="Picture of Me" class="me_pic-images">
+                   <h3 class="Name"> Sean Romero </h3>
+               </div>
+               <div class="textAB">
+               <h2>Welcome To The About Me Page </h2>
+               <p> Welcome my name is Sean Romero. I've always believed that games are more than just a way to pass time.
+               These games can help us connect, enjoy, and be free from actions. These games help us grow as a person
+               I know the first time I played a game I knew it was meant for me. It made me feel alive and meeting people <br>
+               with the same interest and to have fun with was always a blast.</p>
+               </div>
+
+
+               </div>
+               <footer class="footer page-footer font-small ">
+                   <div class="container">
+                       <div class="row">
+                           <span class="text-muted">&copy; Sean Romero, 2025 |  Terms Of Use  |  Privacy Statement</span>
+                       </div>
+                   </div>
+               </footer>
+           </div>
+
+
+           <!-- Javascript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous">
+        </script>
+
 </body>
 </html>
